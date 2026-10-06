@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { CONTENT_UPDATED } from "@/lib/config";
-import { PILLARS } from "@/lib/pages";
+import { COMMERCIAL_PAGES, PILLARS } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/seo";
 
 // /domain is intentionally excluded: it is noindex.
@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    ...COMMERCIAL_PAGES.map((p) => ({
+      url: absoluteUrl(p.href),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
   ];
 }

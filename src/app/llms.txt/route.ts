@@ -1,5 +1,5 @@
 import { DISCLAIMER, SITE_DESCRIPTION, SITE_NAME } from "@/lib/config";
-import { PILLARS } from "@/lib/pages";
+import { COMMERCIAL_PAGES, PILLARS } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/seo";
 import { INDUSTRIES } from "@/content/industries";
 import { USE_CASES } from "@/content/useCases";
@@ -18,6 +18,9 @@ export function GET() {
     "",
     "## Guides",
     ...PILLARS.map((p) => `- [${p.title}](${absoluteUrl(p.href)}): ${p.summary}`),
+    "",
+    "## Buyer resources",
+    ...COMMERCIAL_PAGES.map((p) => `- [${p.title}](${absoluteUrl(p.href)}): ${p.summary}`),
     "",
     "## Use cases",
     ...USE_CASES.map((u) => `- [${u.title}](${absoluteUrl(`/use-cases#${u.id}`)})`),

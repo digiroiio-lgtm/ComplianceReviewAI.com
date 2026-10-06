@@ -37,7 +37,9 @@ export default function Page() {
         These are illustrative patterns, not product features. Real implementations vary, and every
         organisation should confirm the approach with its own compliance and legal advisers. For
         background, see <Link href="/ai-compliance-review">AI compliance review</Link>, and for tooling
-        considerations see <Link href="/compliance-review-software">compliance review software</Link>.
+        considerations see <Link href="/compliance-review-software">compliance review software</Link>. For
+        how the surrounding workflow is automated, see{" "}
+        <Link href="/compliance-review-automation">compliance review automation</Link>.
       </p>
 
       {USE_CASES.map((u) => (

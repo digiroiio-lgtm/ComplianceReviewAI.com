@@ -46,3 +46,31 @@ export const PILLARS: Pillar[] = [
       "How compliance review looks in nine sectors, and where automation helps versus where expert review remains necessary.",
   },
 ];
+
+/**
+ * Phase 2 commercial-intent resources. Kept separate from PILLARS so the primary
+ * navigation and footer are unchanged; linked contextually, from the sitemap and llms.txt.
+ */
+export const COMMERCIAL_PAGES: Pillar[] = [
+  {
+    href: "/ai-compliance-review-software",
+    nav: "AI Compliance Review Software",
+    title: "AI Compliance Review Software",
+    summary:
+      "What distinguishes AI-enabled compliance review software, and the AI-specific criteria for evaluating it.",
+  },
+  {
+    href: "/automated-compliance-review",
+    nav: "Automated Compliance Review",
+    title: "Automated Compliance Review",
+    summary:
+      "Which compliance review tasks can be automated, which cannot, and where human decisions must stay.",
+  },
+  {
+    href: "/compliance-review-automation",
+    nav: "Compliance Review Automation",
+    title: "Compliance Review Automation",
+    summary:
+      "How intake, routing, evidence requests and remediation tracking are automated, and how to implement it.",
+  },
+];

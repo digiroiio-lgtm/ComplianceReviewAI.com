@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
+import { AssetCta } from "./AssetCta";
 import { Disclaimer } from "./Disclaimer";
 import { FaqList } from "./FaqList";
 import { JsonLd } from "./JsonLd";
@@ -20,11 +21,13 @@ type Props = {
   faqs?: Faq[];
   /** Rendered between the header and the main column (e.g. the short answer). */
   intro?: ReactNode;
+  /** Category name for the subtle end-of-page domain-acquisition note. Omit for no note. */
+  assetCategory?: string;
   children: ReactNode;
 };
 
 /** Shared frame for the five pillar pages: header, TOC, FAQ, disclaimer, related guides, JSON-LD. */
-export function PageShell({ path, title, lead, description, crumb, toc, faqs, intro, children }: Props) {
+export function PageShell({ path, title, lead, description, crumb, toc, faqs, intro, assetCategory, children }: Props) {
   const tocItems = faqs?.length ? [...toc, { id: "faq", label: "Frequently asked questions" }] : toc;
   return (
     <>
@@ -62,6 +65,7 @@ export function PageShell({ path, title, lead, description, crumb, toc, faqs, in
               </section>
             ) : null}
             <Disclaimer />
+            {assetCategory ? <AssetCta category={assetCategory} /> : null}
           </div>
         </div>
         <div className="container">
