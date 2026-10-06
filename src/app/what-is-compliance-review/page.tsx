@@ -331,7 +331,9 @@ export default function Page() {
         <Callout title="Related guides">
           <p>
             See <Link href="/ai-compliance-review">AI compliance review</Link> for how AI assists, and{" "}
-            <Link href="/use-cases">use cases</Link> for concrete review scenarios.
+            <Link href="/use-cases">use cases</Link> for concrete review scenarios. To see which review
+            steps can be handled by software, read{" "}
+            <Link href="/automated-compliance-review">automated compliance review</Link>.
           </p>
         </Callout>
       </section>

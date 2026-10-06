@@ -45,7 +45,8 @@ export default function Page() {
       <p>
         See <Link href="/use-cases">use cases</Link> for the review tasks that appear across sectors and{" "}
         <Link href="/what-is-compliance-review">What Is a Compliance Review?</Link> for the common
-        method.
+        method. Which steps can be automated is covered in{" "}
+        <Link href="/automated-compliance-review">automated compliance review</Link>.
       </p>
 
       {INDUSTRIES.map((ind) => (

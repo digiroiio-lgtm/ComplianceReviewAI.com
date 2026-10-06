@@ -144,7 +144,9 @@ export default function Page() {
           Some products are specialised; others combine several of these. Software can support a
           review but does not make an organisation compliant; that depends on people, processes and
           decisions. For the underlying concept, see{" "}
-          <Link href="/what-is-compliance-review">What Is a Compliance Review?</Link>
+          <Link href="/what-is-compliance-review">What Is a Compliance Review?</Link> Products that use
+          AI components are covered in{" "}
+          <Link href="/ai-compliance-review-software">AI compliance review software</Link>.
         </p>
         <Callout title="No vendor rankings">
           <p>
@@ -342,7 +344,9 @@ export default function Page() {
           specialised products; many combine the two. Building offers control and fit but requires
           engineering, ongoing maintenance and the same governance as a purchased tool. Buying shifts
           some of that work to a vendor but requires vendor due diligence and acceptance of a
-          roadmap you do not control. Either way, the evaluation questions above apply. See{" "}
+          roadmap you do not control. Either way, the evaluation questions above apply. Workflow
+          tooling is covered in{" "}
+          <Link href="/compliance-review-automation">compliance review automation</Link>. See{" "}
           <Link href="/use-cases">use cases</Link> to match the tool to the task and{" "}
           <Link href="/industries">industries</Link> for sector-specific considerations.
         </p>

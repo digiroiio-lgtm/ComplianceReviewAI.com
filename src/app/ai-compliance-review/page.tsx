@@ -67,7 +67,8 @@ export default function Page() {
           This guide uses <strong>AI-assisted</strong> to describe the responsible end of that spectrum:
           the system prepares findings, and people check and decide. The foundations of the review
           itself, scope, evidence, gaps, remediation and monitoring, are covered in{" "}
-          <Link href="/what-is-compliance-review">What Is a Compliance Review?</Link>
+          <Link href="/what-is-compliance-review">What Is a Compliance Review?</Link> Where review steps
+          run without manual effort, see <Link href="/automated-compliance-review">automated compliance review</Link>.
         </p>
       </section>
 
@@ -347,7 +348,9 @@ export default function Page() {
           <Link href="/compliance-review-software#how-to-evaluate">
             How to Evaluate Compliance Review Software
           </Link>
-          . For concrete scenarios, see <Link href="/use-cases">AI compliance review use cases</Link>.
+          , and <Link href="/ai-compliance-review-software">AI compliance review software</Link> for
+          the AI-specific criteria. For concrete scenarios, see{" "}
+          <Link href="/use-cases">AI compliance review use cases</Link>.
         </p>
       </section>
     </PageShell>

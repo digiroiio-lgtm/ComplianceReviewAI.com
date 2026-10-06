@@ -184,7 +184,8 @@ export default function HomePage() {
             <Link href="/ai-compliance-review">
               Explore AI compliance review in depth, including its limitations
             </Link>
-            .
+            . Buying? See <Link href="/ai-compliance-review-software">AI compliance review software</Link>{" "}
+            and <Link href="/automated-compliance-review">automated compliance review</Link>.
           </p>
         </div>
       </section>
@@ -367,6 +368,12 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <p style={{ marginTop: "1.4rem" }}>
+            <strong>For buyers:</strong>{" "}
+            <Link href="/ai-compliance-review-software">AI compliance review software</Link>,{" "}
+            <Link href="/automated-compliance-review">automated compliance review</Link> and{" "}
+            <Link href="/compliance-review-automation">compliance review automation</Link>.
+          </p>
           <div className="prose" style={{ maxWidth: "none" }}>
             <Disclaimer />
           </div>

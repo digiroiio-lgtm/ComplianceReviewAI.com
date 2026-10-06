@@ -16,6 +16,7 @@ npm install
 npm run dev        # http://localhost:3000
 npm run build && npm start
 npm run typecheck
+npm run lint
 ```
 
 ## Configuration
@@ -40,6 +41,9 @@ Copy `.env.example` to `.env.local`. All values are optional and read in one pla
 | `/compliance-review-software` | Capabilities, security questions, evaluation scorecard |
 | `/use-cases` | 11 use cases, each Input → AI task → Human decision → Output, with anchors |
 | `/industries` | 9 sectors, each with surface, documents, automation, expert review, with anchors |
+| `/ai-compliance-review-software` | Phase 2: AI-specific buyer criteria for compliance review software |
+| `/automated-compliance-review` | Phase 2: the automation spectrum and what can/cannot be automated |
+| `/compliance-review-automation` | Phase 2: workflow automation and implementation approach |
 | `/domain` | Acquisition page. **`noindex`**, excluded from the sitemap |
 
 Also generated: `/sitemap.xml`, `/robots.txt`, `/llms.txt`, `/opengraph-image`, `/icon.svg`.
@@ -67,6 +71,7 @@ footer link together. Pass an `href` prop to override it for one placement.
 
 - **Use case or industry:** add an entry to `src/content/useCases.ts` or `src/content/industries.ts`. The page,
   table of contents, homepage links and `llms.txt` update automatically.
+- **Phase 2 commercial pages** live in `COMMERCIAL_PAGES` (`src/lib/pages.ts`); they feed the sitemap, `llms.txt` and the related-resources cards without changing the main navigation.
 - **New indexable page:** add the route, then add it to `PILLARS` in `src/lib/pages.ts` so it appears in
   navigation, the footer, the sitemap and `llms.txt`.
 - Bump `CONTENT_UPDATED` in `src/lib/config.ts` when content is materially revised.
